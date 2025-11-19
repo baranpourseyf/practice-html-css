@@ -1,0 +1,148 @@
+/*Stylesheets are reusable and can be used for different files at once*/
+
+/*You will need to make a different font-face for each font you import (this is when you're linking to a font you have saved and added locally)*/
+@font-face {
+  src: url(fonts/MomoTrustDisplay-Regular.ttf);
+  font-family: MomoTrustDisplay;
+}
+
+body {
+  /*You can use any color format you want*/
+  background-color: rgb(255, 255, 255);
+  margin: 0px; /*This one elimintes the defaul space by your web broswer between the border and text*/
+  border: 3px solid rgb(105, 80, 243);
+  display: flow-root;
+}
+
+h1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*There are backups incase a web browser can't display the main font*/
+  border-style: solid; /*There are different styles you can put onthe borders and solid is just one of them*/
+  border-width: 3px;
+  border-color: rgb(74, 240, 252);
+  /* border: 3px solid rgb(252, 69, 69) */ /*If you were to put them all in one line you could use this (it's a short hand syntax)*/
+  border-radius: 10px; /*The curviness in the corners*/
+  text-shadow: 3px 3px 5px rgb(0, 255, 255), -3px -3px 5px rgb(51, 255, 0); /*The third number is for the blur in the back*/
+}
+
+p {
+  color: white;
+  font-family: MomoTrustDisplay; /*There are backups incase a web browser can't display the main font*/
+  font-size: 1em; /*1em is the standard size which means 100%*/
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*Indicating which id to style*/
+#p1 {
+  color: rgb(101, 4, 167);
+  border-bottom: 3px dotted rgb(240, 132, 207);
+  border-top: 3px dotted rgb(240, 132, 207);
+  border-left: 3px dotted rgb(240, 132, 207);
+  border-right: 3px dotted rgb(240, 132, 207);
+  border-radius: 10px;
+}
+
+#p2 {
+  color: rgb(153, 0, 255);
+  border-bottom: 3px dotted rgb(240, 132, 207);
+  border-top: 3px dotted rgb(240, 132, 207);
+  border-left: 3px dotted rgb(240, 132, 207);
+  border-right: 3px dotted rgb(240, 132, 207);
+  border-radius: 10px;
+}
+
+#p3 {
+  color: rgb(225, 0, 255);
+  border-bottom: 3px dotted rgb(240, 132, 207);
+  border-top: 3px dotted rgb(240, 132, 207);
+  border-left: 3px dotted rgb(240, 132, 207);
+  border-right: 3px dotted rgb(240, 132, 207);
+  border-radius: 10px;
+}
+
+#p4 {
+  color: rgb(255, 47, 193);
+  border-bottom: 3px dotted rgb(240, 132, 207);
+  border-top: 3px dotted rgb(240, 132, 207);
+  border-left: 3px dotted rgb(240, 132, 207);
+  border-right: 3px dotted rgb(240, 132, 207);
+  border-radius: 10px;
+}
+
+#shadowBox {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 5px;
+}
+
+.marginBox {
+  border: 5px solid;
+  font-size: 5em;
+  width: 250px;
+  height: 250px;
+}
+
+#marginBox1 {
+  background-color: rgb(93, 123, 255);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25px; /*If there is no other command fixinf it in another position and it's in default position, then you wouln't really see the difference in the right side because it's invisible*/
+  margin-right: 25px;
+  /*margin: 50px;*/ /*The short syntax*/
+}
+
+#marginBox2 {
+  background-color: rgb(26, 44, 124);
+  /*margin-left: auto;*/ /*Will keep the element on the left side of the page no matter how much you move around the browser*/
+  margin: auto; /*This will keep the elements in the middle of the screen*/
+}
+
+#floatImage1 {
+  float: left; /*The text will just float around the image*/
+  margin-right: 10px;
+}
+
+#floatImage2 {
+  float: right;
+  margin-left: 10px;
+}
+
+#overflowDiv {
+  border: 2px solid;
+  height: 75px;
+  /*overflow: visibile;*/ /*We're saying that if any text is about to overflow then let it do so*/
+  /*overflow: hidden;*/ /*Hide the overflowinmg text*/
+  /*overflow: auto;*/ /*Scroll bar is displayed when needed*/
+  /*overflow: scroll;*/ /*You can scroll through the overflowing text amd if you don't have overflowing texts then it will automatically delete the scroll button*/
+  /*overflow: clip; and overflow-clip-margin: 13px;*/ /*Defines how much the text can overflow*/
+  overflow: scroll;
+}
+
+#displayDiv {
+  background-color: purple;
+  width: 100px;
+  height: 100px;
+  /*display: block;*/ /*Puts everything in  a single block*/
+  /*display: inline;*/ /*Puts all free text inline with itself*/
+  /*display: none;*/ /*Removes block*/
+  display: inline-block; /*Adds block and inlines text*/
+  /*visibility:hidden;*/ /*Display none is where it looks like it never existed where as hidden just basically hides it*/
+}
+
+#displaySpan {
+  background-color: violet !important;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+
+/*Indicating which class to style (if you were to comment the ids, this would affect page 2 where the classes are written)*/
+/* .odd {
+  color: rgb(79, 33, 165);
+}
+
+.even {
+  color: rgb(165, 41, 196);
+} */
