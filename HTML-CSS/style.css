@@ -138,6 +138,20 @@ p {
   display: none;
 }
 
+.heightWidthBox {
+  border: 2px solid;
+  padding: 25px;
+  box-sizing: border-box;
+  height: auto;
+  width: 50%;
+  float: right;
+  text-align: center;
+  max-width: 25%;
+  /*min-width: 75%;*/
+  /*max-height: 25%;*/
+  /*min-height: 75%;*/
+}
+
 /*Indicating which class to style (if you were to comment the ids, this would affect page 2 where the classes are written)*/
 /* .odd {
   color: rgb(79, 33, 165);
