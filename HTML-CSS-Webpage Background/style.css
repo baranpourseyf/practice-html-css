@@ -1,0 +1,18 @@
+body {
+  /*You can use any color format you want*/
+  background-color: rgb(255, 255, 255);
+  margin: 0px; /*This one elimintes the defaul space by your web broswer between the border and text*/
+  background-image: url(Images/Vancouver-View.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /*Defines wether the background image will move or not*/
+  background-size: cover;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  color: white;
+}

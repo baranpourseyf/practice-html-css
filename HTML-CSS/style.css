@@ -26,7 +26,7 @@ h1 {
 }
 
 p {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: MomoTrustDisplay; /*There are backups incase a web browser can't display the main font*/
   font-size: 1em; /*1em is the standard size which means 100%*/
   font-weight: 400;
@@ -138,7 +138,13 @@ p {
   display: none;
 }
 
+.heightWidthContainer {
+  background-color: aqua;
+  height: 100vh; /*Used when you want your container to use take up the entire space of the webpage (100% of height available)*/
+}
+
 .heightWidthBox {
+  background-color: white;
   border: 2px solid;
   padding: 25px;
   box-sizing: border-box;
@@ -146,10 +152,66 @@ p {
   width: 50%;
   float: right;
   text-align: center;
-  max-width: 25%;
+  max-width: 35%; /*Your box will take up that many percent of the space available*/
   /*min-width: 75%;*/
   /*max-height: 25%;*/
   /*min-height: 75%;*/
+}
+
+#relativePositionBox {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(3, 101, 158);
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+#fixedPositionBox {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(10, 184, 25);
+  position: fixed;
+  /*top: 100px;*/
+  bottom: 0px;
+  /*left: 100px;*/
+  right: 0px;
+}
+
+#absolutePositionBox1 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(158, 3, 124);
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+
+#absolutePositionBox2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(243, 84, 190);
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  /*Since box 2 is placed inside of box 1, then its nearest ancestor is box 1 and that means that if box 1 moves, box 2 will move relative to that*/
+}
+
+#stickyPositionBox1 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(101, 3, 158);
+  position: sticky;
+  top: 100px;
+}
+
+#stickyPositionBox2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(187, 89, 252);
+  position: absolute;
+  top: 50px;
+  left: 50px;
 }
 
 /*Indicating which class to style (if you were to comment the ids, this would affect page 2 where the classes are written)*/
