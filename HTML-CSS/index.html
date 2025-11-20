@@ -256,5 +256,76 @@
       quas placeat voluptatum debitis nesciunt, odit nostrum cum ab ratione provident.
       Delectus excepturi minus soluta repellendus quam numquam!
     </p>
+
+    <!--Combinators explains the relationship between listed selectors:
+    *a space* = descendant
+    > = child
+    ~ = general sibling
+    + = adjacent sibling
+    
+    div > p means that we're applying css properties to any "p" that is inside "div"-->
+
+    <!--Descendant-->
+    <h2>Descendant</h2>
+    <div id="descendantContainer">
+      <p>This is 'a'</p>
+      <p>This is 'b'</p>
+      <div>
+        <p>This is 'c'</p>
+      </div>
+    </div>
+
+    <p>This is 'd'</p>
+    <p>This is 'e'</p>
+
+    <hr />
+
+    <!--Child-->
+    <h2>Child</h2>
+    <div id="childContainer">
+      <p>This is 'a'</p>
+      <p>This is 'b'</p>
+      <div>
+        <p>This is 'c'</p>
+      </div>
+    </div>
+
+    <p>This is 'd'</p>
+    <p>This is 'e'</p>
+
+    <hr />
+
+    <!--General Sibling-->
+    <h2>General Sibling</h2>
+    <div id="generalSiblingContainer">
+      <p>This is 'a'</p>
+      <p>This is 'b'</p>
+      <div>
+        <p>This is 'c'</p>
+      </div>
+    </div>
+
+    <p>This is 'd'</p>
+    <p>This is 'e'</p>
+
+    <hr />
+
+    <!--Adjacent Sibling-->
+    <h2>Adjacent Sibling</h2>
+    <div id="adjacentSiblingContainer">
+      <p>This is 'a'</p>
+      <p>This is 'b'</p>
+      <div>
+        <p>This is 'c'</p>
+      </div>
+    </div>
+
+    <p>This is 'd'</p>
+    <p>This is 'e'</p>
+
+    <!--Button Changing-->
+    <a href="https://www.google.com/">
+      <button style="border-radius: 20px">Google</button>
+    </a>
   </body>
 </html>

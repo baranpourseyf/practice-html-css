@@ -25,6 +25,17 @@ h1 {
   text-shadow: 3px 3px 5px rgb(0, 255, 255), -3px -3px 5px rgb(51, 255, 0); /*The third number is for the blur in the back*/
 }
 
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*There are backups incase a web browser can't display the main font*/
+  border-style: solid; /*There are different styles you can put onthe borders and solid is just one of them*/
+  border-width: 3px;
+  border-color: rgb(0, 0, 0);
+  /* border: 3px solid rgb(252, 69, 69) */ /*If you were to put them all in one line you could use this (it's a short hand syntax)*/
+  border-radius: 10px; /*The curviness in the corners*/
+  text-shadow: 3px 3px 5px rgb(255, 0, 200), -3px -3px 5px rgb(132, 0, 255); /*The third number is for the blur in the back*/
+}
+
 p {
   color: rgb(0, 0, 0);
   font-family: MomoTrustDisplay; /*There are backups incase a web browser can't display the main font*/
@@ -213,6 +224,56 @@ p {
   top: 50px;
   left: 50px;
 }
+
+#descendantContainer {
+  border: 2px solid;
+}
+
+#descendantContainer p /*Apply this CSS feature onto the 'p' THAT is INSIDE THAT'div'*/ {
+  background-color: rgb(255, 17, 0);
+}
+
+#childContainer {
+  border: 2px solid;
+}
+
+#childContainer > p {
+  background-color: rgb(255, 115, 0);
+}
+
+#generalSiblingContainer {
+  border: 2px solid;
+}
+
+#generalSiblingContainer ~ p {
+  background-color: rgb(229, 255, 0);
+}
+
+#adjacentSiblingContainer {
+  border: 2px solid;
+}
+
+#adjacentSiblingContainer + p {
+  background-color: rgb(43, 255, 0);
+}
+button {
+  font-size: 25px;
+  width: 500px;
+  height: 100px;
+  transition: all 400ms ease;
+}
+button:hover {
+  font-size: 75px;
+  background-color: cadetblue;
+  transform: transition;
+}
+
+button:active {
+  font-size: 50px;
+  background-color: cornflowerblue;
+}
+
+/*Pseudo Classes - Keywords added to a selector */
 
 /*Indicating which class to style (if you were to comment the ids, this would affect page 2 where the classes are written)*/
 /* .odd {
