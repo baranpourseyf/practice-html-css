@@ -149,6 +149,7 @@ p {
   display: none;
 }
 
+/*Indicating which class to style*/
 .heightWidthContainer {
   background-color: aqua;
   height: 100vh; /*Used when you want your container to use take up the entire space of the webpage (100% of height available)*/
@@ -225,35 +226,35 @@ p {
   left: 50px;
 }
 
-#descendantContainer {
+#combinatorSelection #descendantContainer {
   border: 2px solid;
 }
 
-#descendantContainer p /*Apply this CSS feature onto the 'p' THAT is INSIDE THAT'div'*/ {
+#combinatorSelection #descendantContainer p /*Apply this CSS feature onto the 'p' THAT is INSIDE THAT'div'*/ {
   background-color: rgb(255, 17, 0);
 }
 
-#childContainer {
+#combinatorSelection #childContainer {
   border: 2px solid;
 }
 
-#childContainer > p {
+#combinatorSelection #childContainer > p {
   background-color: rgb(255, 115, 0);
 }
 
-#generalSiblingContainer {
+#combinatorSelection #generalSiblingContainer {
   border: 2px solid;
 }
 
-#generalSiblingContainer ~ p {
+#combinatorSelection #generalSiblingContainer ~ p {
   background-color: rgb(229, 255, 0);
 }
 
-#adjacentSiblingContainer {
+#combinatorSelection #adjacentSiblingContainer {
   border: 2px solid;
 }
 
-#adjacentSiblingContainer + p {
+#combinatorSelection#adjacentSiblingContainer + p {
   background-color: rgb(43, 255, 0);
 }
 
