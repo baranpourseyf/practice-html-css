@@ -1,0 +1,142 @@
+@font-face {
+  src: url(fonts/MomoTrustDisplay-Regular.ttf);
+  font-family: MomoTrustDisplay;
+}
+
+body {
+  /*You can use any color format you want*/
+  background-color: rgb(255, 255, 255);
+  margin: 0px; /*This one elimintes the defaul space by your web broswer between the border and text*/
+  border: 3px solid rgb(243, 80, 216);
+  display: flow-root;
+}
+
+h1 {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*There are backups incase a web browser can't display the main font*/
+  border-style: solid; /*There are different styles you can put onthe borders and solid is just one of them*/
+  border-width: 3px;
+  border-color: rgb(135, 16, 190);
+  /* border: 3px solid rgb(252, 69, 69) */ /*If you were to put them all in one line you could use this (it's a short hand syntax)*/
+  border-radius: 10px; /*The curviness in the corners*/
+  text-shadow: 3px 3px 5px rgb(202, 121, 226), -3px -3px 5px rgb(255, 0, 157); /*The third number is for the blur in the back*/
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /*There are backups incase a web browser can't display the main font*/
+  border-style: solid; /*There are different styles you can put onthe borders and solid is just one of them*/
+  border-width: 3px;
+  border-color: rgb(0, 0, 0);
+  /* border: 3px solid rgb(252, 69, 69) */ /*If you were to put them all in one line you could use this (it's a short hand syntax)*/
+  border-radius: 10px; /*The curviness in the corners*/
+  text-shadow: 3px 3px 5px rgb(255, 0, 200), -3px -3px 5px rgb(132, 0, 255); /*The third number is for the blur in the back*/
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-family: MomoTrustDisplay; /*There are backups incase a web browser can't display the main font*/
+  font-size: 1em; /*1em is the standard size which means 100%*/
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*Pseudo Classes */
+button {
+  font-size: 25px;
+  width: 500px;
+  height: 100px;
+  transition: all 400ms ease;
+}
+
+button:hover {
+  font-size: 75px;
+  background-color: cadetblue;
+  transform: transition;
+}
+
+button:active {
+  font-size: 50px;
+  background-color: cornflowerblue;
+}
+
+a:link {
+  color: rgb(255, 0, 179);
+}
+
+a:hover {
+  color: rgb(219, 138, 192);
+  font-size: 1.5em;
+}
+
+a:active {
+  color: rgb(214, 100, 237);
+}
+
+a:visited {
+  color: rgb(116, 116, 116);
+}
+
+li:hover {
+  background-color: orange;
+}
+
+li:not(:hover) {
+  background-color: rgb(151, 149, 145);
+}
+
+/*For specific lines - you can change it from odd to even or even choose specific numbers to highlight (1,2,3,*the numgbers go on*,odd,even,3n,4n,3n+1)
+
+You use 3n to say choose any 3rd number for example. 3n+1 means start this count from 1*/
+/*li:nth-child(odd) {
+  background-color: aquamarine;
+}*/
+
+#greeting p {
+  background-color: cornflowerblue;
+  padding: 10px;
+  display: none;
+}
+
+#greeting:hover p {
+  display: block;
+}
+/*-Pseudo Classes */
+
+/*Pseudo Elements*/
+h1::first-letter {
+  font-size: 2em;
+  font-style: italic;
+}
+
+p::first-line {
+  background-color: yellow;
+}
+
+p::selection {
+  color: rgb(152, 13, 216);
+  background-color: rgb(192, 189, 189);
+}
+
+#fruit li::before {
+  /*content: "✅";*/
+}
+
+#apple::after {
+  content: "🍎";
+}
+
+#orange::after {
+  content: "🍊";
+}
+
+#banana::after {
+  content: "🍌";
+}
+
+#fruit li::marker {
+  content: "✔";
+  color: rgb(3, 219, 3);
+  font-size: 1.2em;
+}
+/*-Pseudo Elements*/
