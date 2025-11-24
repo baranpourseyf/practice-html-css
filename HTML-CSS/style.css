@@ -256,6 +256,8 @@ p {
 #adjacentSiblingContainer + p {
   background-color: rgb(43, 255, 0);
 }
+
+/*Pseudo Classes - Keywords added to a selector */
 button {
   font-size: 25px;
   width: 500px;
@@ -273,7 +275,50 @@ button:active {
   background-color: cornflowerblue;
 }
 
-/*Pseudo Classes - Keywords added to a selector */
+a:link {
+  color: rgb(255, 0, 179);
+}
+
+a:hover {
+  color: rgb(219, 138, 192);
+  font-size: 1.5em;
+}
+
+a:active {
+  color: rgb(214, 100, 237);
+}
+
+a:visited {
+  color: rgb(116, 116, 116);
+}
+
+li:hover {
+  background-color: orange;
+}
+
+li:not(:hover) {
+  background-color: rgb(151, 149, 145);
+}
+
+/*For specific lines - you can change it from odd to even or even choose specific numbers to highlight (1,2,3,*the numgbers go on*,odd,even,3n,4n,3n+1)
+
+You use 3n to say choose any 3rd number for example. 3n+1 means start this count from 1*/
+/*li:nth-child(odd) {
+  background-color: aquamarine;
+}*/
+
+#greeting p {
+  background-color: cornflowerblue;
+  padding: 10px;
+  display: none;
+}
+
+#greeting:hover p {
+  display: block;
+}
+/*-Pseudo Classes - Keywords added to a selector */
+
+/*Pseudo Elements*/
 
 /*Indicating which class to style (if you were to comment the ids, this would affect page 2 where the classes are written)*/
 /* .odd {
