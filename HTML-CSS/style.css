@@ -257,7 +257,7 @@ p {
   background-color: rgb(43, 255, 0);
 }
 
-/*Pseudo Classes - Keywords added to a selector */
+/*Pseudo Classes */
 button {
   font-size: 25px;
   width: 500px;
@@ -316,8 +316,10 @@ You use 3n to say choose any 3rd number for example. 3n+1 means start this count
 #greeting:hover p {
   display: block;
 }
-/*-Pseudo Classes - Keywords added to a selector */
-
+/*-Pseudo Classes */
+h1::first-letter {
+  font-size: 2em;
+}
 /*Pseudo Elements*/
 
 /*Indicating which class to style (if you were to comment the ids, this would affect page 2 where the classes are written)*/
